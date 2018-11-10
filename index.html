@@ -3,6 +3,26 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <title>KAPA_Server</title>
+<link href="css/gotop.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script>
+<!-- jq -->
+<script type="text/javascript">
+$(function(){
+    $("#gotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1000);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+</script>
 <style type="text/css">
 body {
 	background-color: #000;
@@ -55,5 +75,6 @@ document.write('<a href="http://www.free-counter.jp/"></a>');</script>
 </table>
   
 </form>
+<div id="gotop"><img src="image/GOTOP.png"></div>
 </body>
 </html>
