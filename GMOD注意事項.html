@@ -5,11 +5,6 @@
 <title>無標題文件</title>
 <script src="js/jquery-3.3.1.min.js">
 </script>
-<script>
-　　 function resize(){
-　　 parent.document.getElementById("Gmain").height=document.body.	scrollHeight; 　　　
-}
-</script>
 <!-- jq -->
 <script type="text/javascript">
 $(function(){
@@ -28,18 +23,9 @@ $(".flipG2").click(function(){
   });});
 </script>
 <script>
-    function DoAdjHeight() {
-        var theFrame = $("iframe", parent.document.body);
-        theFrame.each(function () {
-            $(this).height($(document.body).height() + 100);
-        });
-    }
-    $(function () {
-        DoAdjHeight();
-        $(window).resize(function () {
-            DoAdjHeight();
-        });
-    });
+　　 function resize(){
+　　 parent.document.getElementById("Gmain").height=document.body.	scrollHeight;
+}
 </script>
 <style type="text/css">
 .flipG1{
