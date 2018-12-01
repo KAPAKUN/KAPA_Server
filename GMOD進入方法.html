@@ -3,6 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>無標題文件</title>
+<script src="js/jquery-3.3.1.min.js">
+</script>
+<script>
+　　 function resize(){
+　　 parent.document.getElementById("G2-main").height=document.body.	scrollHeight; 　　　
+}
+</script>
 <style type="text/css">
 .G2-TITLE {
 	font-weight: bold;
@@ -18,7 +25,7 @@ body {
 </style>
 </head>
 
-<body>
+<body onload="resize();">
 <P><span class="G2-TITLE">第一種方法</span><br />
   <span class="G-TITELBB">I.開啟遊戲後按下鍵盤"~"會出現GMOD內建的控制台<br />
   II.在控制台內輸入指令:connect 伺服器IP 按下Enter即可進入伺服器(如列表無任何伺服器，請嘗試其他方法，若其他方法也無法進入伺服器，就通知伺服器主)</span><br />

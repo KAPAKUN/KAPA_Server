@@ -3,6 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>無標題文件</title>
+<script src="js/jquery-3.3.1.min.js">
+</script>
+<script>
+　　 function resize(){
+　　 parent.document.getElementById("G1-main").height=document.body.	scrollHeight; 　　　
+}
+</script>
 <style type="text/css">
 body p {
 	font-weight: bold;
@@ -14,7 +21,7 @@ body {
 </style>
 </head>
 
-<body>
+<body onload="resize();">
 <P>I.點擊上方地圖跟模組的網址<br />
 II.點擊全部訂閱<br />
 <img alt="image/Snipaste1201-1.png" height="200"

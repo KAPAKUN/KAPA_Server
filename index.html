@@ -1,3 +1,11 @@
+<HMTL>
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -23,6 +31,20 @@ $(function(){
     });
 });
 </script>
+<script type="text/javascript">
+function SetCwinHeight(){
+var iframeid=document.getElementById("main"); //iframe id
+if (document.getElementById){
+   if (iframeid && !window.opera){
+   if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight){
+   iframeid.height = iframeid.contentDocument.body.offsetHeight;
+   }else if(iframeid.Document && iframeid.Document.body.scrollHeight){
+   iframeid.height = iframeid.Document.body.scrollHeight;
+   }
+   }
+}
+}
+</script>
 <style type="text/css">
 body {
 	background-color: #000;
@@ -31,7 +53,7 @@ body {
 </style>
 </head>
 
-<body>
+<body onload="resize();">
 <form id="index" name="index" method="post" width="96%" height="96%" action="">
   <a href="index.html"><img src="image/TOP_1.png" width="100%" height="370" /></a><br>
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -57,7 +79,7 @@ document.write('<a href="http://www.free-counter.jp/"></a>');</script>
 <a href="http://www.free-counter.jp/">
 <img src="https://www.f-counter.net/ani2/30/1535887359/" alt="カウンター" border="0" style="margin:0px; padding:0px; border:0px; vertical-align:bottom"></a></p>
 </th>
-    <td width="100%" height="2080" colspan="4" align="left" valign="top"><iframe src="main.html" name="main" width="100%" height="100%" align="middle" scrolling="no" frameborder="0"></iframe></td>
+    <td width="100%" height="2080" colspan="4" align="left" valign="top"><iframe src="main.html" id="main" name="main" width="100%" height="100%" align="middle" scrolling="no" frameborder="0" onload="Javascript:SetCwinHeight()"></iframe></td>
   </tr>
   <tr>
     <th align="left" valign="top" scope="row">&nbsp;</th>

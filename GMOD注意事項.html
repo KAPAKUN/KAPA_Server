@@ -5,6 +5,11 @@
 <title>無標題文件</title>
 <script src="js/jquery-3.3.1.min.js">
 </script>
+<script>
+　　 function resize(){
+　　 parent.document.getElementById("Gmain").height=document.body.	scrollHeight; 　　　
+}
+</script>
 <!-- jq -->
 <script type="text/javascript">
 $(function(){
@@ -67,20 +72,20 @@ body {
 </style>
 </head>
 
-<body>
+<body onload="resize();">
 <p><span class="G-titleB">1.進入遊戲前請確定是否有將工作坊內容全數訂閱</span><br />
 工作坊網址:<a href="https://goo.gl/yBxNnX" target="_blank"><b>地圖</b></a>and
 		 <a href="https://goo.gl/XoMKX9" target="_blank"><b>模組</b></a>
 <div class="flipG1">
 	<span class="1">顯示/收起訂閱方法:</span></div>
 <div class="panelG1">
-<iframe src="GMOD訂閱方法.html" name="G1-main" width="100%" height="400" align="middle" scrolling="no" frameborder="0"></iframe>
+<iframe src="GMOD訂閱方法.html" id="G1-main" name="G1-main" width="100%" height="400" align="middle" scrolling="no" frameborder="0"></iframe>
 </div>
 <span class="G-titleB">2.如何進入伺服器</span><br />
 <div class="flipG2">
 	<span class="1">顯示/收起進入方法:</span></div>
 <div class="panelG2">
-<iframe src="GMOD進入方法.html" name="G2-main" width="100%" height="1250" align="middle" scrolling="no" frameborder="0"></iframe>
+<iframe src="GMOD進入方法.html" id="G2-main" name="G2-main" width="100%" height="1250" align="middle" scrolling="no" frameborder="0"></iframe>
 </div>
 <span class="G-titleB">3.進入遊戲時請注意初始視窗有無顯示近期更新，並用心閱讀<br />
 <img src="image/Snipaste1201ps.png" width="800" height="450" /><br />
