@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<script src="js/jquery-3.3.1.min.js">
+</script>
+<!-- jq -->
+<script type="text/javascript">
+$(function(){
+$(".flipG1").click(function(){
+    $(".panelG1").slideToggle("slow");
+    $(".xs1").toggle();
+    $(".xs2").toggle();
+  });});
+</script>
+<script type="text/javascript">
+$(function(){
+$(".flipG2").click(function(){
+    $(".panelG2").slideToggle("slow");
+    $(".xs1").toggle();
+    $(".xs2").toggle();
+  });});
+</script>
+<style type="text/css">
+.flipG1{
+	font-weight: bold;
+	margin: 0px;
+	padding: 10px;
+	text-align: left;
+	cursor: pointer;
+	font-family: 'Arial';
+	color: #F00;
+}
+.panelG1{
+	margin:0px;
+	padding:5px;
+	text-align: left;
+	border:solid 1px #c3c3c3;
+	display:none;
+	font-family:'Arial';
+}
+.flipG2{
+	font-weight: bold;
+	margin: 0px;
+	padding: 10px;
+	text-align: left;
+	cursor: pointer;
+	font-family: 'Arial';
+	color: #F00;
+}
+.panelG2{
+	margin:0px;
+	padding:5px;
+	text-align: left;
+	border:solid 1px #c3c3c3;
+	display:none;
+	font-family:'Arial';
+}
+.G-titleB {
+	font-weight: bold;
+	font-size: 20px;
+}
+body {
+	background-color: #CCC;
+}
+</style>
+</head>
+
+<body>
+<p><span class="G-titleB">1.進入遊戲前請確定是否有將工作坊內容全數訂閱</span><br />
+工作坊網址:<a href="https://goo.gl/yBxNnX" target="_blank"><b>地圖</b></a>and
+		 <a href="https://goo.gl/XoMKX9" target="_blank"><b>模組</b></a>
+<div class="flipG1">
+	<span class="1">顯示/收起訂閱方法:</span></div>
+<div class="panelG1">
+<iframe src="GMOD訂閱方法.html" name="G1-main" width="100%" height="400" align="middle" scrolling="no" frameborder="0"></iframe>
+</div>
+<span class="G-titleB">2.如何進入伺服器</span><br />
+<div class="flipG2">
+	<span class="1">顯示/收起進入方法:</span></div>
+<div class="panelG2">
+<iframe src="GMOD進入方法.html" name="G2-main" width="100%" height="1250" align="middle" scrolling="no" frameborder="0"></iframe>
+</div>
+<span class="G-titleB">3.進入遊戲時請注意初始視窗有無顯示近期更新，並用心閱讀<br />
+<img src="image/Snipaste1201ps.png" width="800" height="450" /><br />
+4.尊重、包容、友善</span><br />
+  <img src="image/hqdefault.jpg" width="480" height="360" /><br />
+</p>
+</body>
+</html>
