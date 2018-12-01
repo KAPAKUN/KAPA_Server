@@ -27,6 +27,20 @@ $(".flipG2").click(function(){
     $(".xs2").toggle();
   });});
 </script>
+<script>
+    function DoAdjHeight() {
+        var theFrame = $("iframe", parent.document.body);
+        theFrame.each(function () {
+            $(this).height($(document.body).height() + 100);
+        });
+    }
+    $(function () {
+        DoAdjHeight();
+        $(window).resize(function () {
+            DoAdjHeight();
+        });
+    });
+</script>
 <style type="text/css">
 .flipG1{
 	font-weight: bold;
