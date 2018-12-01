@@ -1,24 +1,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>無標題文件</title>
+<title>GMOD</title>
 <script src="js/jquery-3.3.1.min.js">
 </script>
 <!-- jq -->
-<script>
-    function DoAdjHeight() {
-        var theFrame = $("Gmain", parent.document.body);
-        theFrame.each(function () {
-            $(this).height($(document.body).height() + 100);
-        });
-    }
-    $(function () {
-        DoAdjHeight();
-        $(window).resize(function () {
-            DoAdjHeight();
-        });
-    });
-</script>
 <script type="text/javascript">
 $(function(){
 $(".flip").click(function(){
@@ -27,21 +13,6 @@ $(".flip").click(function(){
     $(".xs2").toggle();
   });});
 </script>
-<script type="text/javascript">
-function SetCwinHeight(){
-var iframeid=document.getElementById("Gmain"); //iframe id
-if (document.getElementById){
-   if (iframeid && !window.opera){
-   if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight){
-   iframeid.height = iframeid.contentDocument.body.offsetHeight;
-   }else if(iframeid.Document && iframeid.Document.body.scrollHeight){
-   iframeid.height = iframeid.Document.body.scrollHeight;
-   }
-   }
-}
-}
-</script>
-
 <style type="text/css">
 body {
 	background-image: url(image/B-70%25.png);
