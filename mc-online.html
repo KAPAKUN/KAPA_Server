@@ -13,6 +13,9 @@
 .h1 {
 	font-weight: bold;
 }
+.h2 {
+	color: #F00;
+}
 </style>
 </head>
 
@@ -23,5 +26,7 @@ $port = "25565";
 require __DIR__.'/data.php';?>
 <?php echo $clean_motd; ?> (<?php echo $status; ?>)<br>
 線上人數：<?php echo $players_online; ?>/<?php echo $players_max; ?>
+<br /> 
+<span class="h2">※GitHub並不支援php，所以目前伺服器狀態是無法顯示的 </span>
 </body>
 </html>
